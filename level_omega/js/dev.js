@@ -68,7 +68,9 @@ $(document).ready(function() {
   // Tooltip
   // company page
   var tooltipContent = '<span class="tooltip">Manage how others see your information. <a href="/user/login">Login</a> or <a href="/register">Register</a> in order to claim your Director Profile.</span>';
-
+  
+  // disable default behavior
+  $('a.anonymous_unclaimed').removeAttr('href');
   $(function(){
     // only show tooltip for anonymous users
     $('a.anonymous_unclaimed').tipTip({
@@ -77,5 +79,6 @@ $(document).ready(function() {
       keepAlive: true,
     });
   });
+  
 
 });
