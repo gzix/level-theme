@@ -45,9 +45,3 @@
    <?php print theme('appointment_field', $fields['appointment_type']); ?>
    <?php print theme('appointment_field', $fields['occupation']); ?>
 </div>
-  
-
-
-
-
-<?php //var_dump($fields); ?>
