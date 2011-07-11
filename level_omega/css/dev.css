@@ -1042,36 +1042,25 @@ span.IN-widget {
 }
 
 /* company name */
-.profile .profile-catagory .director_appointment .profile_field_company_name,
-.profile .profile-catagory .director_appointment .company_dissolved,
-.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved {
-  padding: 20px 0 5px 0;
-  overflow: auto;
+.profile .profile-catagory .director_appointment h3.profile_field_company_name ,
+.profile .profile-catagory .director_appointment h3.company_dissolved,
+.profile .profile-catagory .director_appointmentcompany_dissolved h3.company_dissolved  {
+  display: block;
   clear: both;
-}
-
-.profile .profile-catagory .director_appointment .profile_field_company_name h3,
-.profile .profile-catagory .director_appointment .company_dissolved h3,
-.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved h3 {
-  display: none;
-}
-
-.profile .profile-catagory .director_appointment .profile_field_company_name p,
-.profile .profile-catagory .director_appointment .company_dissolved p,
-.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved p {
   padding: 5px 0;
+  margin: 15px 0 5px 0;
   font-size: 1.2em;
   font-weight: bold;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 }
 
-.profile .profile-catagory .director_appointment .company_dissolved p,
-.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved p {
+.profile .profile-catagory .director_appointment .company_dissolved,
+.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved {
   color: #999;
 }
-.profile .profile-catagory .director_appointment .company_dissolved p em,
-.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved p em {
+.profile .profile-catagory .director_appointment .company_dissolved em,
+.profile .profile-catagory .director_appointmentcompany_dissolved .company_dissolved em {
   color: #000;
   font-style: normal;
 }
@@ -1132,17 +1121,27 @@ span.IN-widget {
 
 .profile .identification .content {
   color: #000;
+  font-weight: normal;
 }
-
-.profile .identification .identification-top {
+.profile .identification .identification-top .content {
+  color: #000;
   font-weight: bold;
 }
 
-.profile .identification .nationality {
+.profile .identification .profile_field_nationality,
+.profile .identification .profile_field_person_dob {
   float: left;
   width: 220px;
   margin-right: 10px;
 
+}
+
+/* withhold tooltip */
+.profile .identification .field_hidden .content span,
+.profile .profile-catagory .field_hidden p span {
+  font-weight: bold;
+  color: #000;
+  cursor: help;
 }
 
 /* hide dup titles */
