@@ -67,4 +67,5 @@ $(document).ready(function() {
   
   // hide privacy legend
   $('#user-profile-form legend:contains(privacy)').hide();
+
 });
