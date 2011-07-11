@@ -182,7 +182,7 @@
 </div>
 </div><!-- /page -->
   <?php print $closure; ?>
-   <script>
+   <script type="text/javascript">
      FB.XFBML.parse();
    </script>          
 </body>

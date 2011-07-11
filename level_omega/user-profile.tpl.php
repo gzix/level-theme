@@ -63,6 +63,12 @@
         <h4>Date of Birth</h4>
         <div class="content"><span><?php print $account->content['identification']['profile_date_of_birth']['#value']; ?></span></div>
       </div>
+
+      <div class="<?php print $account->content['identification']['profile_age']['#attributes']['class']; ?>">
+        <h4><?php print $account->content['identification']['profile_age']['#title']; ?></h4>
+        <div class="content"><span><?php print $account->content['identification']['profile_age']['#value']; ?> years</span></div>
+      </div>
+
     </div>
 
     <div class="<?php print $account->content['identification']['profile_occupation']['#attributes']['class']; ?>">

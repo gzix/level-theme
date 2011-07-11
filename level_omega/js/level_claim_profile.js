@@ -83,7 +83,7 @@ $(document).ready(function() {
   // Withhold fields
   var tooltipWithhold =  '<span class="tooltip">This director has chosen to withhold this information.</span>';
   $(function(){
-   // only show tooltip for anonymous users
+
    $('.profile .profile-catagory .field_hidden p span, .profile .identification .field_hidden .content span').tipTip({
      defaultPosition: 'top',
      content: tooltipWithhold,
