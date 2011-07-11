@@ -1054,11 +1054,14 @@ span.IN-widget {
 }
 
 /* company name */
+#block-level_user-company_appointments p {
+  font-size: 1em;
+}
 .profile .profile-catagory .director_appointment h3.profile_field_company_name ,
 .profile .profile-catagory .director_appointment h3.company_dissolved,
 .profile .profile-catagory .director_appointmentcompany_dissolved h3.company_dissolved,
 /* new block on company page */
-#block-level_user-company_appointments .profile_field_name {
+#block-level_user-company_appointments .director-name {
   display: block;
   clear: both;
   padding: 5px 0;
@@ -1069,8 +1072,29 @@ span.IN-widget {
   border-bottom: 1px solid #999;
 }
 
-#block-level_user-company_appointments .profile_field_name h3 {
+#block-level_user-company_appointments .director-name h3,
+#block-level_user-company_appointments .profile_field_address h3 {
   display: none;
+}
+
+#block-level_user-company_appointments .profile_field_name,
+#block-level_user-company_appointments .profile_field_name p,
+#block-level_user-company_appointments .profile_field_person_dob, 
+#block-level_user-company_appointments .profile_field_person_dob p {
+  float: left;
+  width: auto;
+}
+
+#block-level_user-company_appointments .profile_field_name,
+#block-level_user-company_appointments .profile_field_person_dob {
+  margin-right: 10px;
+}
+
+#block-level_user-company_appointments .profile_field_address p {
+  width: 100%;
+  color: #999;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 .profile .profile-catagory .director_appointment .company_dissolved,
