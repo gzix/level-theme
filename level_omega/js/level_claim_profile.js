@@ -84,7 +84,7 @@ $(document).ready(function() {
   var tooltipWithhold =  '<span class="tooltip">This director has chosen to withhold this information.</span>';
   $(function(){
 
-   $('.profile .profile-catagory .field_hidden p span, .profile .identification .field_hidden .content span').tipTip({
+   $('.profile .profile-catagory .field_hidden p span, .profile .identification .field_hidden .content span, .director_appointment .field_hidden p span').tipTip({
      defaultPosition: 'top',
      content: tooltipWithhold,
      keepAlive: false,
