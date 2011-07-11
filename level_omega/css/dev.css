@@ -1034,6 +1034,18 @@ span.IN-widget {
   border: 0 none;
 }
 
+.profile .appointments {
+  padding: 30px 0 15px 0;
+}
+
+.profile .appointments h3 {
+  display: block;
+  border: 0 none;
+  color: #000;
+  font-size: 1em;
+  padding: 0;
+}
+
 .profile .profile-catagory .director_appointment,
 .profile .profile-catagory .director_appointmentcompany_dissolved {
   clear: both;
@@ -1203,3 +1215,39 @@ ul.primary li.active a:hover {
   border: 1px solid #999;
   border-bottom: 1px solid #fff;
 }
+
+/* #user-profile-form */
+#user-profile-form legend {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 15px;
+}
+
+#edit-profile-hide-person-dob-wrapper.form-item,
+#edit-profile-hide-occupation-wrapper.form-item,
+#edit-profile-hide-address-wrapper.form-item,
+#edit-profile-hide-nationality-wrapper.form-item {
+  padding: 15px 0;
+  overflow: auto;
+  margin: 0;
+  border-bottom: 1px solid #999;
+}
+
+#edit-profile-hide-person-dob-wrapper label.option,
+#edit-profile-hide-occupation-wrapper label.option,
+#edit-profile-hide-address-wrapper label.option,
+#edit-profile-hide-nationality-wrapper label.option {
+  float: left;
+  width: 220px;
+  margin-right: 10px;
+}
+#edit-profile-hide-person-dob-wrapper .description,
+#edit-profile-hide-occupation-wrapper .description,
+#edit-profile-hide-address-wrapper .description,
+#edit-profile-hide-nationality-wrapper .description {
+  float: right;
+  width: 470px;
+}
+

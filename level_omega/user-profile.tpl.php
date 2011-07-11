@@ -47,7 +47,8 @@
 <div class="profile clear-block">
 
   <div class="linkedin_additional clear-block">
-    <?php print $profile['linkedin_additional']; ?>
+    <?php //print $profile['linkedin_additional']; ?>
+    <?php print  $account->content['linkedin_additional']['options']['#value']; ?>
   </div>
   
   <div class="identification clear-block">
@@ -73,12 +74,13 @@
       <h4><?php print $account->content['identification']['profile_address']['#title']; ?></h4>
       <div class="content"><span><?php print $account->content['identification']['profile_address']['#value']; ?></span></div>
     </div>
-  </div>
+
+  </div><!--/ .identification -->
   
   <div class="appointments clear-block">
     <?php print $profile['appointments']; ?>
   </div>
 
   <?php //print $user_profile; ?>
-  <?php //print var_dump($account); ?>
+  <?php //var_dump($account); ?>
 </div>
