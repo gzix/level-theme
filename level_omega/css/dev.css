@@ -870,7 +870,7 @@ span.tooltip a:hover {
 
 /* body.section-doc */
 .block-level_claim_profile {
-  margin: 10px -10px;
+  margin: 10px 0;
 }
 
 body.section-doc .claimDialog .dialog-links-wrapper {
@@ -984,10 +984,10 @@ body.logged-in .confirmDialog {
 /* claimed-profile */
 .block-level_claim_profile .claimed-profile {
   background: transparent url(../images/icon-claimed.gif) 0 0 no-repeat;
-  padding: 17px 0 20px 100px;
-  margin-top: -20px;
-  margin
-  min-height: 48px;
+  padding: 17px 0 0 100px;
+  margin-top: -15px;
+  margin-left: -10px;
+  min-height: 38px;
   font-size: 0.85em;
   color: #333;
 }
@@ -1152,7 +1152,7 @@ span.IN-widget {
   padding: 0;
 }
 
-.director_appointment > div {
+.company_director_appointment > div {
   overflow: auto;
 }
 
