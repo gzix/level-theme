@@ -1056,7 +1056,9 @@ span.IN-widget {
 /* company name */
 .profile .profile-catagory .director_appointment h3.profile_field_company_name ,
 .profile .profile-catagory .director_appointment h3.company_dissolved,
-.profile .profile-catagory .director_appointmentcompany_dissolved h3.company_dissolved  {
+.profile .profile-catagory .director_appointmentcompany_dissolved h3.company_dissolved,
+/* new block on company page */
+#block-level_user-company_appointments .profile_field_name {
   display: block;
   clear: both;
   padding: 5px 0;
@@ -1065,6 +1067,10 @@ span.IN-widget {
   font-weight: bold;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
+}
+
+#block-level_user-company_appointments .profile_field_name h3 {
+  display: none;
 }
 
 .profile .profile-catagory .director_appointment .company_dissolved,
@@ -1092,7 +1098,9 @@ span.IN-widget {
 .profile .profile-catagory .director_appointment .profile_field_occupation h3,
 .profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_appointment_date h3,
 .profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_appointment_type h3,
-.profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_occupation h3 {
+.profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_occupation h3,
+/* new block on company page */
+#block-level_user-company_appointments h3 {
   display: block;
   float: left;
   width: 220px;
@@ -1107,7 +1115,9 @@ span.IN-widget {
 .profile .profile-catagory .director_appointment .profile_field_occupation p,
 .profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_appointment_date p,
 .profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_appointment_type p,
-.profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_occupation p {
+.profile .profile-catagory .director_appointmentcompany_dissolved .profile_field_occupation p,
+/* new block on company page */
+#block-level_user-company_appointments p {
   display: block;
   float: left;
   width: 470px;
@@ -1116,6 +1126,10 @@ span.IN-widget {
   font-size: 0.9em;
   line-height: 18px;
   padding: 0;
+}
+
+.director_appointment > div {
+  overflow: auto;
 }
 
 /* identification */
@@ -1150,7 +1164,8 @@ span.IN-widget {
 
 /* withhold tooltip */
 .profile .identification .field_hidden .content span,
-.profile .profile-catagory .field_hidden p span {
+.profile .profile-catagory .field_hidden p span,
+.director_appointment .field_hidden p span {
   font-weight: bold;
   color: #000;
   cursor: help;
