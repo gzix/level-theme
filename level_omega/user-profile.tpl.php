@@ -53,25 +53,25 @@
   <div class="identification clear-block">
 
     <div class="identification-top clear-block">
-      <div class="nationality">
+      <div class="<?php print $account->content['identification']['profile_nationality']['#attributes']['class']; ?>">
         <h4><?php print $account->content['identification']['profile_nationality']['#title']; ?></h4>
-        <div class="content"><?php print $account->content['identification']['profile_nationality']['#value']; ?></div>
+        <div class="content"><span><?php print $account->content['identification']['profile_nationality']['#value']; ?></span></div>
       </div>
       
-      <div class="dob">
+      <div class="<?php print $account->content['identification']['profile_date_of_birth']['#attributes']['class']; ?>">
         <h4>Date of Birth</h4>
-        <div class="content"><?php print $account->content['identification']['profile_date_of_birth']['#value']; ?></div>
+        <div class="content"><span><?php print $account->content['identification']['profile_date_of_birth']['#value']; ?></span></div>
       </div>
     </div>
 
-    <div class="occupation">
+    <div class="<?php print $account->content['identification']['profile_occupation']['#attributes']['class']; ?>">
       <h4><?php print $account->content['identification']['profile_occupation']['#title']; ?></h4>
-      <div class="content"><?php print $account->content['identification']['profile_occupation']['#value']; ?></div>
+      <div class="content"><span><?php print $account->content['identification']['profile_occupation']['#value']; ?></span></div>
     </div>
     
-    <div class="address">
+    <div class="<?php print $account->content['identification']['profile_address']['#attributes']['class']; ?>">
       <h4><?php print $account->content['identification']['profile_address']['#title']; ?></h4>
-      <div class="content"><?php print $account->content['identification']['profile_address']['#value']; ?></div>
+      <div class="content"><span><?php print $account->content['identification']['profile_address']['#value']; ?></span></div>
     </div>
   </div>
   
