@@ -1297,3 +1297,24 @@ ul.primary li.active a:hover {
 #block-level_user-company_appointments {
   clear: both;
 }
+
+/* company description block */
+#block-level_user-company_description {
+  clear: both;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border-bottom: 1px dotted #999;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+p.date-updated {
+  margin-top: 15px;
+  font-size: 0.85em;
+}
+
+#top_bar h1.company-name {
+  margin-top: 15px;
+  padding-top: 15px;
+  /*border-top: 1px dotted #999;*/
+}
