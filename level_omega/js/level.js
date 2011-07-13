@@ -71,7 +71,7 @@ $(document).ready(function() {
   // Star Rating
 
   // temporal var to get [vote_average] from any_vote module
-  if ($('#vote-average').length) {
+  /*if ($('#vote-average').length) {
     var voteAverage = parseInt($('#vote-average').text());
   }
   else {
@@ -97,19 +97,10 @@ $(document).ready(function() {
       starItems[starIndex].addClass('full-star');
     }
     
-    /*starValue[starIndex].hover(function() {
-      for (var index = 0; index < starIndex; index++) {
-        $('ul.any_vote_points_widget li:eq('+index+') a').addClass('hilighted');
-      }
-    });*/
+
     
 
-  }
-
-
-
-
-  
+  }*/
 
 
 });

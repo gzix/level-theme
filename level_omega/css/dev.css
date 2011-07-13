@@ -721,18 +721,13 @@ body.not-front #main-content .node {
   text-indent: -999em;
 }
 .widget .any_vote_points_widget a:hover,
-/*.widget .any_vote_points_widget span.user_vote_score,*/
-.widget .any_vote_points_widget .full-star {
+.widget .any_vote_points_widget .average-active {
   display: block;
   float: left;
   width: 30px;
   height: 28px;
   background: transparent url(../images/vote-stars.png) 100% 50% no-repeat;
   text-indent: -999em;
-}
-
-.widget .any_vote_points_widget li .hilighted {
-  background: transparent url(../images/vote-stars.png) 100% 50% no-repeat;
 }
 
 /* recommend any_vote */
