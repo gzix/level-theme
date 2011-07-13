@@ -67,5 +67,49 @@ $(document).ready(function() {
   
   // hide privacy legend
   $('#user-profile-form legend:contains(privacy)').hide();
+  
+  // Star Rating
+
+  // temporal var to get [vote_average] from any_vote module
+  if ($('#vote-average').length) {
+    var voteAverage = parseInt($('#vote-average').text());
+  }
+  else {
+    var voteAverage = 0;
+  }
+  //Create array of stars & star value so they can be referenced again.
+  var starItems = new Array();
+  var starValue = new Array();
+  
+  // loop through all stars (5)
+  for (var starIndex = 0; starIndex < 5; starIndex++) {
+    // collect starindex
+    starItems[starIndex] = $('ul.any_vote_points_widget li:eq('+starIndex+')').children();
+    // collect star value
+    starValue[starIndex] = starIndex;
+    
+    starValueCalculate = (starIndex + 1) * 20;
+    // debug replace * with starValue[starIndex]
+    starItems[starIndex].text(starValueCalculate);
+    
+    // add full-star class to appropriate stars
+    if (starValueCalculate < (voteAverage + 10)) {
+      starItems[starIndex].addClass('full-star');
+    }
+    
+    /*starValue[starIndex].hover(function() {
+      for (var index = 0; index < starIndex; index++) {
+        $('ul.any_vote_points_widget li:eq('+index+') a').addClass('hilighted');
+      }
+    });*/
+    
+
+  }
+
+
+
+
+  
+
 
 });
