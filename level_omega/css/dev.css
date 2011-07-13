@@ -720,7 +720,7 @@ body.not-front #main-content .node {
   background: transparent url(../images/vote-stars.png) 0 50% no-repeat;
   text-indent: -999em;
 }
-.widget .any_vote_points_widget a:hover,
+
 .widget .any_vote_points_widget .average-active {
   display: block;
   float: left;
@@ -728,6 +728,11 @@ body.not-front #main-content .node {
   height: 28px;
   background: transparent url(../images/vote-stars.png) 100% 50% no-repeat;
   text-indent: -999em;
+}
+
+.widget .any_vote_points_widget a:hover,
+.widget .any_vote_points_widget li.highlight a {
+  background: transparent url(../images/vote-stars.png) -30px 50% no-repeat;
 }
 
 /* recommend any_vote */

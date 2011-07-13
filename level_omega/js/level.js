@@ -101,6 +101,53 @@ $(document).ready(function() {
     
 
   }*/
+  
+  var voteItems = new Array();
+
+  for (var index = 0; index < 5; index++) {
+    // collect starindex
+    voteItems[index] = $('ul.any_vote_points_widget li:eq('+index+') a');
+    voteItems[index].addClass('number-'+index);
+    
+ 
+
+
+  }
+
+  /*voteItems[index].hover(function(){
+
+    // highlight stars below this one
+    for(i=0; i<index; i++) {
+      $('ul.any_vote_points_widget li:eq('+i+') a').addClass('highlight');
+    }
+    // unhighlight stars above this one
+    for(i=index+1; i<5; i++) {
+      $('ul.any_vote_points_widget li:eq('+i+') a').removeClass('highlight');
+    }
+
+    alert(index);
+
+  });*/
+  
+  $('ul.any_vote_points_widget li').removeClass('first last');
+  
+  $('ul.any_vote_points_widget li').hover(
+  
+    function(){
+      var index = parseInt($(this).attr('class'));
+      // highlight this one 
+
+      // highlight stars below this one
+      for(i=0; i<index; i++) {
+        $('ul.any_vote_points_widget li').eq(i).addClass('highlight');
+      }
+    },
+    function(){
+      // unhighlight stars above this one
+      $('ul.any_vote_points_widget li').removeClass('highlight');
+    }
+  );
+
 
 
 });
