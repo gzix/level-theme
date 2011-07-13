@@ -693,7 +693,7 @@ body.not-front #main-content .node {
 .block-any_vote .widget ul.any_vote_points_widget {
   width: 183px;
   height: 32px;
-  padding: 45px 0 40px 0;
+  padding: 45px 0 40px 7px;
 }
 
 .block-any_vote .widget .any_vote_points_widget,
@@ -704,10 +704,6 @@ body.not-front #main-content .node {
 }
 .block-any_vote .widget .any_vote_points_widget li {
   display: inline;
-}
-
-.block-any_vote .widget .any_vote_points_widget li.first a {
-  margin-left: 8px;
 }
 
 .widget .any_vote_points_widget a,
@@ -726,13 +722,13 @@ body.not-front #main-content .node {
   float: left;
   width: 30px;
   height: 28px;
-  background: transparent url(../images/vote-stars.png) 100% 50% no-repeat;
+  background: transparent url(../images/vote-stars.png) -30px 50% no-repeat;
   text-indent: -999em;
 }
 
 .widget .any_vote_points_widget a:hover,
 .widget .any_vote_points_widget li.highlight a {
-  background: transparent url(../images/vote-stars.png) -30px 50% no-repeat;
+  background: transparent url(../images/vote-stars.png) 100% 50% no-repeat;
 }
 
 /* recommend any_vote */
