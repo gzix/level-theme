@@ -1306,7 +1306,7 @@ ul.primary li.active a:hover {
 #block-boxes-level_profile_blurb {
   clear: both;
   margin: 0 10px 15px 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 40px 0;
   font-size: 1em;
   line-height: 1.5em;
   border-bottom: 1px dotted #999;
@@ -1336,7 +1336,7 @@ p.date-updated {
   color: #000;
   font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #block-level_user-company_description a.director_edit_button,
@@ -1349,22 +1349,19 @@ p.date-updated {
 #block-level_user-company_description a.director_edit_button,
 #boxes-box-level_profile_blurb a.edit-levels_own_profile_page,
 #block-boxes-level_profile_blurb .boxes-box-controls ul.links li a,
-#block-level_user-company_description a.director_add_button {
+#block-level_user-company_description a.director_add_button,
+#boxes-box-level_profile_blurb input#edit-submit-1,
+body.section-doc #main-content form#node-form input#edit-submit {
   display: block;
   width: auto;
   font-size: 0.9em;
   text-align: center;
   padding: 3px 15px;
+  cursor: pointer;
   color: #555;
   background: #ddd;
   border: 1px solid #bbb;
   border-radius: 3px;
-}
-
-#block-level_user-company_description a.director_add_button {
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
 }
 
 a#level_accounts_download_link,
@@ -1394,4 +1391,67 @@ a#level_accounts_download_link img {
 
 #block-views-company_files-block_3 {
   margin-bottom: -10px;
+}
+
+#block-level_user-company_description.company_description_empty {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#block-level_user-company_description.company_description_empty span {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 0.85em;
+}
+
+#block-level_user-company_description.company_description_empty span:hover {
+  background: #f0d27f;
+}
+
+/* hide various element from node-form */
+#boxes-box-level_profile_blurb form label,
+#boxes-box-level_profile_blurb form div.description,
+#boxes-box-level_profile_blurb div#edit-description-wrapper,
+#boxes-box-level_profile_blurb div#edit-title-wrapper,
+#boxes-box-level_profile_blurb fieldset,
+#boxes-box-level_profile_blurb div.grippie,
+/* node-form */
+body.section-doc #main-content form#node-form div#edit-title-wrapper,
+body.section-doc #main-content form#node-form fieldset,
+body.section-doc #main-content form#node-form div.admin,
+body.section-doc #main-content form#node-form div#edit-private-wrapper,
+body.section-doc #main-content form#node-form div.teaser-checkbox,
+body.section-doc #main-content form#node-form input#edit-preview,
+body.section-doc #main-content form#node-form div.grippie {
+  display: none !important;
+}
+
+#boxes-box-level_profile_blurb textarea#edit-body,
+body.section-doc #main-content form#node-form textarea#edit-body {
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  min-height: 180px;
+}
+
+#boxes-box-level_profile_blurb input#edit-submit-1,
+body.section-doc #main-content form#node-form input#edit-submit {
+  float: right;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+body.section-doc #main-content form#node-form #edit-body-wrapper label {
+  font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
