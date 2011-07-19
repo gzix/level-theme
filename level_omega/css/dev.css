@@ -1430,7 +1430,9 @@ body.section-doc #main-content form#node-form div.admin,
 body.section-doc #main-content form#node-form div#edit-private-wrapper,
 body.section-doc #main-content form#node-form div.teaser-checkbox,
 body.section-doc #main-content form#node-form input#edit-preview,
-body.section-doc #main-content form#node-form div.grippie {
+body.section-doc #main-content form#node-form div.grippie,
+body.section-doc #main-content form#node-form input#edit-preview-changes,
+body.section-doc #main-content form#node-form input#edit-delete {
   display: none !important;
 }
 
