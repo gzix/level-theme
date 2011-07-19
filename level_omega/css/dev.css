@@ -1304,10 +1304,11 @@ ul.primary li.active a:hover {
   position: relative;
   clear: both;
   margin: 0 10px 15px 0;
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   font-size: 1em;
   line-height: 1.5em;
   border-bottom: 1px dotted #999;
+  border-top: 0 none;
 }
 
 #boxes-box-level_profile_blurb {
@@ -1340,9 +1341,11 @@ p.date-updated {
 }
 
 #block-level_user-company_description a.director_edit_button,
-#boxes-box-level_profile_blurb a.edit-levels_own_profile_page {
+#boxes-box-level_profile_blurb a.edit-levels_own_profile_page,
+#block-boxes-level_profile_blurb .boxes-box-controls ul.links li a,
+#block-level_user-company_description a.director_add_button {
   display: block;
-  width: 30px;
+  width: auto;
   font-size: 0.9em;
   text-align: center;
   padding: 5px 10px;
@@ -1351,3 +1354,28 @@ p.date-updated {
   border: 1px solid #bbb;
   border-radius: 3px;
 }
+
+#block-level_user-company_description a.director_add_button {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+a#level_accounts_download_link,
+a#level_accounts_download_link img {
+  margin: 0;
+  padding: 0;
+}
+
+/* LB own page */
+.view-companies-house-latest-profile-2 h1 {
+  border-bottom: 0 none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#main_wrapper .view-companies-house-latest-profile-2 .views-row {
+  margin: 0;
+  padding: 0; 
+}
+
