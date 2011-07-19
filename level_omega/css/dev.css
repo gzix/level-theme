@@ -1294,6 +1294,9 @@ ul.primary li.active a:hover {
 }
 
 /* #block-level_user-company_appointments */
+#content-top {
+  position: relative;
+}
 #block-level_user-company_appointments {
   clear: both;
 }
@@ -1301,7 +1304,6 @@ ul.primary li.active a:hover {
 /* company description block */
 #block-level_user-company_description,
 #block-boxes-level_profile_blurb {
-  position: relative;
   clear: both;
   margin: 0 10px 15px 0;
   padding: 0 0 30px 0;
@@ -1309,10 +1311,6 @@ ul.primary li.active a:hover {
   line-height: 1.5em;
   border-bottom: 1px dotted #999;
   border-top: 0 none;
-}
-
-#boxes-box-level_profile_blurb {
-  position: relative;
 }
 
 #block-level_user-company_description {
@@ -1342,10 +1340,10 @@ p.date-updated {
 }
 
 #block-level_user-company_description a.director_edit_button,
-.boxes-box-controls {
+.boxes-box-controls a {
   position: absolute;
-  top: -45px;
-  right: 0;
+  top: 0;
+  right: 10px;
 }
 
 #block-level_user-company_description a.director_edit_button,
@@ -1356,7 +1354,7 @@ p.date-updated {
   width: auto;
   font-size: 0.9em;
   text-align: center;
-  padding: 5px 10px;
+  padding: 3px 15px;
   color: #555;
   background: #ddd;
   border: 1px solid #bbb;
@@ -1365,8 +1363,8 @@ p.date-updated {
 
 #block-level_user-company_description a.director_add_button {
   position: absolute;
-  bottom: 30px;
-  right: 0;
+  bottom: 20px;
+  right: 10px;
 }
 
 a#level_accounts_download_link,
@@ -1375,14 +1373,25 @@ a#level_accounts_download_link img {
   padding: 0;
 }
 
+#block-level_user-company_description p {
+  padding-bottom: 1em;
+  line-height: 1.6em;
+}
+
 /* LB own page */
 .view-companies-house-latest-profile-2 h1.company-name {
   border-bottom: 0 none;
   margin-top: 0;
+  margin-right: 90px;
   padding-top: 0;
+  line-height: 1.2em;
 }
 
 #main_wrapper .view-companies-house-latest-profile-2 .views-row {
   margin: 0;
   padding: 0; 
+}
+
+#block-views-company_files-block_3 {
+  margin-bottom: -10px;
 }
