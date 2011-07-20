@@ -1308,7 +1308,7 @@ ul.primary li.active a:hover {
   width: 460px;
   float: left;
   font: normal 24px/30px Georgia, 'Adobe Garamond Pro', serif;
-  margin-bottom: 20px;
+  margin-bottom: 0
 }
 
 #block-level_claim_profile-account-progress-block {
@@ -1384,4 +1384,17 @@ body.section-doc h1#page-title {
 #block-level_claim_profile-account-progress-block a:hover {
   color: #555;
   background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
+}
+
+/* claimed block */
+#block-level_claim_profile-claim-director-profile-link-block .claimed-profile {
+  clear: both;
+  width: 600px;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding-top: 14px;
+}
+
+body.page-doc-person h1#page-title {
+  border-top: 0 none;
 }
