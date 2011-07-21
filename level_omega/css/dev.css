@@ -1399,3 +1399,9 @@ body.section-doc h1#page-title {
 body.page-doc-person h1#page-title {
   border-top: 0 none;
 }
+
+/* help button */
+#block-level_claim_profile-account-progress-block a.help {
+  float: right;
+  margin-right: 0;
+}
