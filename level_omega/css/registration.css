@@ -117,7 +117,8 @@ p.intro-text {
 }
 
 input#edit-submit, 
-input#edit-delete 
+input#edit-delete,
+input#edit-reset
 {
 	background-color: #21a0e1;
 	color: #FFF;

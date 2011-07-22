@@ -1416,3 +1416,17 @@ body.section-users #content-top {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+
+#block-level_user-level_user_profile_linkedin_driver {
+  clear: both;
+}
+
+form#linkedin-user-enable-form,
+form#linkedin-user-enable-form p.description,
+form#linkedin-user-settings-form {
+  margin: 15px 0;
+}
+
+form#linkedin-user-settings-form input.form-submit {
+  margin-right: 10px;
+}
