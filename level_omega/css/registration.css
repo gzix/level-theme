@@ -355,6 +355,7 @@ span#forgot_password a:hover {
   text-align: center;
   height: 60px;
   color: #fff;
+  border: 0 none !important;
 }
 #main-content form#user-login input#edit-submit:hover {
   background: transparent url(../images/form-buttons.gif) -660px -60px no-repeat;

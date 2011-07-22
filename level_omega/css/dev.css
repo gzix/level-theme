@@ -1304,7 +1304,7 @@ ul.primary li.active a:hover {
 }
 
 /* claim profile blocks */
-#block-level_claim_profile-claim-director-profile-link-block,
+#block-level_claim_profile-user-profile-cta-block,
 #block-level_claim_profile-linkedin-next-step-block {
   width: 460px;
   float: left;
@@ -1324,7 +1324,7 @@ ul.primary li.active a:hover {
   margin-bottom: 0;
 }
 
-#block-level_claim_profile-claim-director-profile-link-block h2,
+#block-level_claim_profile-user-profile-cta-block h2,
 #block-level_claim_profile-linkedin-next-step-block h2 {
   font: normal 50px/60px Georgia, 'Adobe Garamond Pro', serif;
   color: #000;
@@ -1389,7 +1389,7 @@ body.section-doc h1#page-title {
 }
 
 /* claimed block */
-#block-level_claim_profile-claim-director-profile-link-block .claimed-profile {
+#block-level_claim_profile-user-profile-cta-block .claimed-profile {
   clear: both;
   width: 600px;
   font-size: 13px;
