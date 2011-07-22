@@ -1422,11 +1422,40 @@ body.section-users #content-top {
 }
 
 form#linkedin-user-enable-form,
-form#linkedin-user-enable-form p.description,
 form#linkedin-user-settings-form {
   margin: 15px 0;
+  clear: both;
+  overflow: auto;
+}
+
+form#linkedin-user-enable-form p.description {
+  margin: 15px 0;
+  padding-top: 15px;
+  clear: both;
 }
 
 form#linkedin-user-settings-form input.form-submit {
   margin-right: 10px;
+}
+
+/* apply gradeint grey button style */
+form#linkedin-user-enable-form input.form-submit,
+form#linkedin-user-settings-form input.form-submit {
+  display: block;
+  float: left;
+  font-size: 12px;
+  padding: 7px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #999;
+  background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
+}
+
+form#linkedin-user-enable-form input.form-submit:hover,
+form#linkedin-user-settings-form input.form-submit:hover {
+  color: #555;
+  background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
 }

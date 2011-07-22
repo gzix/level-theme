@@ -116,17 +116,22 @@ p.intro-text {
 	width: 340px;
 }
 
-input#edit-submit, 
-input#edit-delete,
-input#edit-reset
-{
-	background-color: #21a0e1;
-	color: #FFF;
-	font-weight: bold;
-	font-size: 1.2em;
-	padding: 5px;
+input.form-submit {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #999;
+  background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
 	cursor: pointer;
-	border: 0 none;
+}
+input.form-submit:hover {
+  color: #555;
+  background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
 }
 
 #user-register .description {

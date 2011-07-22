@@ -918,10 +918,14 @@ body .block-webform  {
 	}
 
 /* Newsletter subscription form */
- #footer_main input#edit-submit {
-  background-color: #000;
+#footer_main #simplenews-block-form-1 input#edit-submit {
+  background: #000;
   color: #FFF;
-  border: 0;
+  border: 0 none;
+}
+
+#simplenews-block-form-1 {
+  margin: 10px 0;
 }
 
 #footer_main .form-required {
