@@ -978,11 +978,14 @@ body.logged-in .confirmDialog {
   text-align: center;
   color: #21a0e1;
   background: transparent url(../images/form-buttons.gif) 0 0 no-repeat;
+  border: 0 none;
 }
 #claimContent .container-inline input#edit-submit:hover {
   background: transparent url(../images/form-buttons.gif) 0 -60px no-repeat;
   color: #333;
 }
+
+
 
 
 /* claimed-profile */
