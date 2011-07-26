@@ -86,4 +86,9 @@ $(document).ready(function() {
     $('ul.linkedin_contact_list').jcarousel();
   });
 
+	// New #block-level_search-level_search_tabs on #page_tools
+	
+	// Firstly, Hide director search
+	//$('#page_tools #level_search_block_form_directors').hide();
+
 });

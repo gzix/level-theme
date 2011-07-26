@@ -1863,12 +1863,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   height: auto;
 }
 
-/* search box */
-#page_tools #block-level_search-level_search_tabs {
-  width: 220px;
-  float: left;
-}
-
+/* global toolbar */
 #page_tools #block-level_platform-global-toolbar {
   width: 700px;
   float: right;
@@ -1886,13 +1881,14 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 #access-links a {
   display: block;
   float: left;
-  font-size: 12px;
-  padding: 7px 10px;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 5px 10px;
   margin-right: 10px;
   border: 1px solid #ccc;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   color: #999;
   background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
 }
@@ -1901,4 +1897,126 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 #access-links a:hover {
   color: #555;
   background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
+}
+
+/* search box */
+#page_tools #block-level_search-level_search_tabs {
+  width: 220px;
+  float: left;
+  border: 0 none;
+  /*border: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;*/
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list {
+  float: left;
+  width: 80px;
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list ul,
+#page_tools #block-level_search-level_search_tabs .item-list li {
+  margin: 0;
+  padding: 0;
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list li {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 26px;
+  background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
+  border: 1px solid #ccc;
+  border-right: 0 none;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#page_tools #block-level_search-level_search_tabs .item-list li:hover {
+  background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list li a {
+  display: block;
+  width: 70px;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 5px;
+  color: #999;
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list li a#level_search_block_tab_companies {
+  background: transparent url(../images/pin-down-7px.png) 67px 50% no-repeat;
+}
+#page_tools #block-level_search-level_search_tabs .item-list li a#level_search_block_tab_directors {
+  background: transparent url(../images/pin-up-7px.png) 67px 50% no-repeat;
+}
+
+#page_tools #block-level_search-level_search_tabs .item-list li a:hover {
+  color: #555;
+}
+
+#page_tools .level_search_tabbed_form {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  float: left;
+}
+
+#page_tools .block-boxes,
+#page_tools .block-views,
+#page_tools .block-views div {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  float: left;
+}
+
+/* text <input> */
+#page_tools .level_search_tabbed_form input.form-text {
+  width: 110px;
+  height: 26px;
+  margin: 0;
+  padding: 0 3px;
+  font-size: 10px;
+  line-height: 16px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+/* button <input> */
+#page_tools .level_search_tabbed_form input.form-submit {
+  width: 22px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  float: left;
+  border: 0 none;
+  background: transparent url(../images/button-page-tools-search.gif) 50% 50% no-repeat;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-left: 0 none;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* temporal hide */
+#page_tools #block-level_search-level_search_tabs label,
+#page_tools #block-level_search-level_search_tabs label .compact-form-label {
+  display: none;
+}
+#page_tools #block-level_search-level_search_tabs .item-list .last
+ {
+
 }

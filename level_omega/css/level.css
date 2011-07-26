@@ -1069,11 +1069,6 @@ div.level_search_tabbed_form #edit-submit
 	display: none;
 }
 
-/* Hide all forms */
-.level_search_tabbed_form {
-	display: none;
-}
-
 /* Form currently being shown for the active tab */
 .level_search_tabbed_form_active {
 	display: block;
