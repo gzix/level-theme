@@ -1,4 +1,8 @@
 /* Layout */
+.container_4 {
+  width: 940px;
+}
+
 #page {
   padding-bottom: 42px;
   position: relative;
@@ -1837,6 +1841,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   float: left;
   font-size: 12px;
   padding: 7px 10px;
+  margin-right: 10px;
   border: 1px solid #ccc;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -1844,7 +1849,56 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   color: #999;
   background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
 }
+
 #block-level_platform-people_known > .content #block-level_platform-steps_to_activate a:hover {
+  color: #555;
+  background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
+}
+
+
+
+
+/* New pagetools */
+#page_tools {
+  height: auto;
+}
+
+/* search box */
+#page_tools #block-level_search-level_search_tabs {
+  width: 220px;
+  float: left;
+}
+
+#page_tools #block-level_platform-global-toolbar {
+  width: 700px;
+  float: right;
+}
+
+/* buttons */
+#profile-links {
+  float: left;
+}
+#access-links {
+  float: right;
+}
+
+#profile-links a,
+#access-links a {
+  display: block;
+  float: left;
+  font-size: 12px;
+  padding: 7px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #999;
+  background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
+}
+
+#profile-links a:hover,
+#access-links a:hover {
   color: #555;
   background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
 }
