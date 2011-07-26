@@ -24,13 +24,13 @@
   // Define relationship texts
   $distance = $contact['distance'];
   $relation = '';
-  if ($distance == 1) {
+  if ($distance === '1') {
     $relation = ' directly on LinkedIn.';
   }
-  if ($distance == 2 || $distance == 3) {
+  if ($distance === '2' || $distance === '3') {
     $relation = ' through someone else.';
   }
-  if ($distance == 100) {
+  if ($distance === '100') {
     $relation = ' through a LinkedIn group.';
   }
 
