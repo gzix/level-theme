@@ -145,7 +145,7 @@
        </div><!-- /#content-top -->
       <?php endif; ?>
 
-      <div id="main-content" class="">
+      <div id="main-content">
         <?php print $content; ?>
       </div><!-- /#main-content -->
       <?php if($content_bottom): ?>

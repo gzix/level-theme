@@ -89,33 +89,35 @@ $(document).ready(function() {
 
   /* New #block-level_search-level_search_tabs on #page_tools
    */
-  
-  // Change <label> texts to "Search UK Companies" : "Search UK Directors"
-  $('#level_search_block_form_companies .views-widget-filter-text_1 label').text('Search UK Companies');
-  $('#level_search_block_form_directors .views-widget-filter-text label').text('Search UK Directors');
-  
-  // Define shorthand selectors
-  var companyTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.first';
-  var companySearch = '#page_tools #level_search_block_form_companies, ' + companyTrigger;
-  var directorTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.last';
-  var directorSearch = '#page_tools #level_search_block_form_directors, ' + directorTrigger;
-  
-  // Fix hieght to prevent #page_tools flicker
-  $('#page_tools').height(28);
-  
-  // Hide director search elements first
-  $(directorSearch).hide();
+  // Prevent conflict with front page search box
+  if ($('body.not-front').length > 0) {
+    // Change <label> texts to "Search UK Companies" : "Search UK Directors"
+    $('#level_search_block_form_companies .views-widget-filter-text_1 label').text('Search UK Companies');
+    $('#level_search_block_form_directors .views-widget-filter-text label').text('Search UK Directors');
 
-  // Toggle display
-  $(companyTrigger).children().click(function() {
-    $(companySearch).slideUp();
-    $(directorSearch).slideDown();
-    return false;
-  });
-  
-  $(directorTrigger).children().click(function() {
-    $(companySearch).slideDown();
-    $(directorSearch).slideUp();
-    return false;
-  });
+    // Define shorthand selectors
+    var companyTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.first';
+    var companySearch = '#page_tools #level_search_block_form_companies, ' + companyTrigger;
+    var directorTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.last';
+    var directorSearch = '#page_tools #level_search_block_form_directors, ' + directorTrigger;
+
+    // Fix hieght to prevent #page_tools flicker
+    $('#page_tools').height(28);
+
+    // Hide director search elements first
+    $(directorSearch).hide();
+
+    // Toggle display
+    $(companyTrigger).children().click(function() {
+      $(companySearch).slideUp();
+      $(directorSearch).slideDown();
+      return false;
+    });
+
+    $(directorTrigger).children().click(function() {
+      $(companySearch).slideDown();
+      $(directorSearch).slideUp();
+      return false;
+    });
+  }
 });
