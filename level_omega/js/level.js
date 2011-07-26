@@ -68,6 +68,13 @@ $(document).ready(function() {
   // hide privacy legend
   $('#user-profile-form legend:contains(privacy)').hide();
   
+  // LinkedIn Carousel
+  $(function(){
+    $('ul.linkedin_contact_list').jcarousel();
+  });
+  // To-do add equalHeight() to  ul.linkedin_contact_list li
+	
+  
   var moreLikeThisContent = '<span class="tooltip">This panel shows companies that share the same SIC codes as the profile you are viewing. The greater the number of SIC codes a company has in common, the higher it will appear in this list.</span>';
   
   $(function(){
@@ -79,16 +86,36 @@ $(document).ready(function() {
 	   });
 	  });
 	
-	// To-do add equalHeight() to  ul.linkedin_contact_list li
-	
-	// LinkedIn Carousel
-	$(function(){
-    $('ul.linkedin_contact_list').jcarousel();
+
+  /* New #block-level_search-level_search_tabs on #page_tools
+   */
+  
+  // Change <label> texts to "Search UK Companies" : "Search UK Directors"
+  $('#level_search_block_form_companies .views-widget-filter-text_1 label').text('Search UK Companies');
+  $('#level_search_block_form_directors .views-widget-filter-text label').text('Search UK Directors');
+  
+  // Define shorthand selectors
+  var companyTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.first';
+  var companySearch = '#page_tools #level_search_block_form_companies, ' + companyTrigger;
+  var directorTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.last';
+  var directorSearch = '#page_tools #level_search_block_form_directors, ' + directorTrigger;
+  
+  // Fix hieght to prevent #page_tools flicker
+  $('#page_tools').height(28);
+  
+  // Hide director search elements first
+  $(directorSearch).hide();
+
+  // Toggle display
+  $(companyTrigger).children().click(function() {
+    $(companySearch).slideUp();
+    $(directorSearch).slideDown();
+    return false;
   });
-
-	// New #block-level_search-level_search_tabs on #page_tools
-	
-	// Firstly, Hide director search
-	//$('#page_tools #level_search_block_form_directors').hide();
-
+  
+  $(directorTrigger).children().click(function() {
+    $(companySearch).slideDown();
+    $(directorSearch).slideUp();
+    return false;
+  });
 });

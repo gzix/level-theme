@@ -2011,11 +2011,24 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   border-bottom-right-radius: 3px;
 }
 
-/* temporal hide */
-#page_tools #block-level_search-level_search_tabs label,
-#page_tools #block-level_search-level_search_tabs label .compact-form-label {
+#page_tools #block-level_search-level_search_tabs label {
   display: none;
 }
+
+#page_tools #block-level_search-level_search_tabs label.compact-form-label {
+  display: inline;
+  font-weight: normal;
+  color: #999;
+  font-size: 10px;
+  line-height: 16px;
+  top: 6px;
+}
+
+
+
+/* temporal hide */
+
+
 #page_tools #block-level_search-level_search_tabs .item-list .last
  {
 
