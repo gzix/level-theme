@@ -78,5 +78,10 @@ $(document).ready(function() {
 	     keepAlive: false,
 	   });
 	  });
+	  
+	// LinkedIn Carousel
+	$(function(){
+    $('ul.linkedin_contact_list').jcarousel();
+  });
 
 });

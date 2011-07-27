@@ -1602,3 +1602,82 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+/* LinkedIn #block-level_platform-people_known */
+#block-level_platform-people_known .content {
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 10px #ddd;
+  -webkit-box-shadow: 5px 5px 10px #ddd;
+  box-shadow: 5px 5px 10px #ddd;
+  overflow: hidden;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list,
+#block-level_platform-people_known ul.linkedin_contact_list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li {
+  width: 185px;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li img,
+#block-level_platform-people_known ul.linkedin_contact_list li .img-placeholder {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #ccc;
+  float: left;
+  margin-right: 10px;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li .name {
+  float: left;
+  font-size: 13px;
+  padding: 2px 0;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li .name a {
+  color: #333;
+}
+#block-level_platform-people_known ul.linkedin_contact_list li .name a:hover {
+  color: #21A0E1;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list .relationship {
+  clear: both;
+  padding: 10px 0 5px 0;
+  font-size: 12px;
+  font-weight: normal;
+  color: #333;
+}
+
+#block-level_platform-people_known .contact_count {
+  clear: both;
+  padding: 10px;
+  text-align: center;
+}
+
+/* jcaruosel */
+.jcarousel-container-horizontal {
+  width: 678px;
+  overflow: hidden;
+}
+.jcarousel-prev,
+.jcarousel-next {
+  width: 40px;
+  height: 40px;
+  background: #000;
+}

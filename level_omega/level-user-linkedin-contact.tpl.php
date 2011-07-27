@@ -38,11 +38,19 @@
 
 <div <?php print drupal_attributes($contact['#attributes'])?>>
 
-<?php if (isset($contact['picture-url'])) :?>
-  <img src="<?php print $contact['picture-url']; ?>">
-<?php endif;?>
+<div class="name-img clearfix">
+<?php
+  if (isset($contact['picture-url'])) {
+    print '<img src="'.$contact['picture-url'].'">';
+  }
+  else {
+    print '<a class="img-placeholder"></a>';
+  }
+?>
 
-<h3><a href="<?php print $contact['public-profile-url'] ?>"><?php print $contact['first-name']; print ' ';  print $contact['last-name']; ?></a></h3>
+<h3 class="name"><a href="<?php print $contact['public-profile-url'] ?>"><?php print $contact['first-name']; print ' ';  print $contact['last-name']; ?></a></h3>
+
+</div>
 
 <p class="relationship">You know <?php print $contact['first-name'] . $relation; ?></p>
 
