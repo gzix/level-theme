@@ -1621,6 +1621,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  display: none !important; /* temporal hide */
 }
 
 #block-level_platform-people_known > .content {
@@ -1762,7 +1763,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 }
 
 /* not-logged-in */
-body.not-logged-in #block-level_platform-people_known > .content h3 {
+#block-level_platform-people_known > .content h3 {
   font: normal 50px/60px Georgia, 'Adobe Garamond Pro', serif;
   color: #000;
   margin-bottom: 5px;
@@ -1770,7 +1771,7 @@ body.not-logged-in #block-level_platform-people_known > .content h3 {
   float: left;
 }
 
-body.not-logged-in #block-level_platform-people_known > .content p {
+#block-level_platform-people_known > .content p {
   float: left;
   font: normal 24px/30px Georgia, 'Adobe Garamond Pro', serif;
   margin-bottom: 20px;
@@ -1778,7 +1779,7 @@ body.not-logged-in #block-level_platform-people_known > .content p {
   float: left;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate {
   float: right;
   width: 198px;
   padding: 10px;
@@ -1793,21 +1794,21 @@ body.not-logged-in #block-level_platform-people_known #block-level_platform-step
   right: 10px;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate > h2 {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate > h2 {
   font: normal 20px/25px Georgia, 'Adobe Garamond Pro', serif;
   color: #555;
   margin-bottom: 10px;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .content {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .content {
   position: relative;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol {
   margin: 0 0 10px 0;
   padding: 0;
 }
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol li {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol li {
   list-style: decimal inside;
   margin: 0;
   padding: 5px 0;
@@ -1816,21 +1817,21 @@ body.not-logged-in #block-level_platform-people_known #block-level_platform-step
   font-size: 14px;
   line-height: 16px;
 }
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol li.last {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol li.last {
   border-bottom: 0 none;
 }
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol li span {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol li span {
   color: #999;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol li.ticked {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol li.ticked {
   background: transparent url(../images/icon-ticked.gif) 100% 50% no-repeat;
 }
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate .item-list ol li.unticked {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate .item-list ol li.unticked {
   background: transparent url(../images/icon-unticked.gif) 100% 50% no-repeat;
 }
 
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate a {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate a {
   display: block;
   float: left;
   font-size: 12px;
@@ -1842,7 +1843,7 @@ body.not-logged-in #block-level_platform-people_known #block-level_platform-step
   color: #999;
   background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
 }
-body.not-logged-in #block-level_platform-people_known #block-level_platform-steps_to_activate a:hover {
+#block-level_platform-people_known > .content #block-level_platform-steps_to_activate a:hover {
   color: #555;
   background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
 }
