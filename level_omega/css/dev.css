@@ -1616,6 +1616,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   -webkit-box-shadow: 5px 5px 10px #ddd;
   box-shadow: 5px 5px 10px #ddd;
   overflow: hidden;
+  position: relative;
 }
 
 #block-level_platform-people_known ul.linkedin_contact_list,
@@ -1660,24 +1661,49 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   clear: both;
   padding: 10px 0 5px 0;
   font-size: 12px;
+  line-height: 1.25em;
   font-weight: normal;
   color: #333;
 }
 
 #block-level_platform-people_known .contact_count {
   clear: both;
-  padding: 10px;
+  padding: 10px 180px;
+  font-size: 12px;
+  line-height: 1.25em;
+  font-weight: normal;
+  color: #333;
   text-align: center;
 }
 
 /* jcaruosel */
 .jcarousel-container-horizontal {
   width: 678px;
-  overflow: hidden;
 }
+
 .jcarousel-prev,
 .jcarousel-next {
-  width: 40px;
-  height: 40px;
-  background: #000;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  bottom: -40px;
+  z-index:  10;
+}
+
+.jcarousel-prev {
+  background: transparent url(../images/carousel-prev-next.png) 0 50% no-repeat;
+  left: 20px;
+}
+
+.jcarousel-next {
+  background: transparent url(../images/carousel-prev-next.png) 100% 50% no-repeat;
+  right: 20px;
+}
+
+.jcarousel-prev-disabled,
+.jcarousel-next-disabled {
+  opacity: 0.5;
+  cursor: auto;
 }
