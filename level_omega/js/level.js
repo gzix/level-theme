@@ -89,35 +89,52 @@ $(document).ready(function() {
 
   /* New #block-level_search-level_search_tabs on #page_tools
    */
-  // Prevent conflict with front page search box
-  if ($('body.not-front').length > 0) {
-    // Change <label> texts to "Search UK Companies" : "Search UK Directors"
-    $('#level_search_block_form_companies .views-widget-filter-text_1 label').text('Search UK Companies');
-    $('#level_search_block_form_directors .views-widget-filter-text label').text('Search UK Directors');
+   var topSearchBox = '#page_tools #block-level_search-level_search_tabs';
+   // Only if there's topSearchBox
+   if ($(topSearchBox).length > 0) {
 
-    // Define shorthand selectors
-    var companyTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.first';
-    var companySearch = '#page_tools #level_search_block_form_companies, ' + companyTrigger;
-    var directorTrigger = '#page_tools #block-level_search-level_search_tabs .item-list li.last';
-    var directorSearch = '#page_tools #level_search_block_form_directors, ' + directorTrigger;
+     // Change <label> texts to "Search UK Companies" : "Search UK Directors"
+     $('#level_search_block_form_companies .views-widget-filter-text_1 label').text('Search UK Companies');
+     $('#level_search_block_form_directors .views-widget-filter-text label').text('Search UK Directors');
+     
+     // Hide inactive tab & form
+     $('.level_search_tabbed_form').not('.level_search_tabbed_form_active').hide();
+     $(topSearchBox + ' .item-list ul li').not('.active_tab').hide();
+     
+     // Expand both Companies & Directors tabs when rollover
+     $(topSearchBox + ' .item-list ul').hover(
+       // mouseover
+       function(){
+         // show inactive tab
+         $(this).children().not('.active_tab').show();
+         // when rollover each tabs
+         $(this).children().mouseover(function(){
+            // add .active_tab class to it then remove that class from its sibling
+            $(this).addClass('active_tab');
+            $(this).siblings().removeClass('active_tab');
+            // if Directors tab is active, show its form & hide Companies form
+            if ($(this).children().hasClass('search_block_tab_Directors')) {
+              $(topSearchBox + ' #level_search_block_form_companies').hide();
+              $(topSearchBox + ' #level_search_block_form_directors').show();
+            }
+            // if Companies tab is active, show its form & hide Directors form
+            if ($(this).children().hasClass('search_block_tab_Companies')) {
+              $(topSearchBox + ' #level_search_block_form_directors').hide();
+              $(topSearchBox + ' #level_search_block_form_companies').show();
+            }
+         });
+       },
+       // mouseout
+       function(){
+         $(this).children().not('.active_tab').hide();
+       }
+     );
+     
+     // hide annoying Directors .compact-form-label in FireFox
+     if ($('.level_search_tabbed_form').not('.level_search_tabbed_form_active')) {
+       $(topSearchBox + ' #level_search_block_form_directors label.compact-form-label').hide();
+     }
+     
+   }
 
-    // Fix hieght to prevent #page_tools flicker
-    $('#page_tools').height(28);
-
-    // Hide director search elements first
-    $(directorSearch).hide();
-
-    // Toggle display
-    $(companyTrigger).children().click(function() {
-      $(companySearch).slideUp();
-      $(directorSearch).slideDown();
-      return false;
-    });
-
-    $(directorTrigger).children().click(function() {
-      $(companySearch).slideDown();
-      $(directorSearch).slideUp();
-      return false;
-    });
-  }
 });
