@@ -36,24 +36,22 @@
 
 ?>
 
-<div <?php print drupal_attributes($contact['#attributes'])?>>
+<a href="<?php print $contact['public-profile-url'] ?>" <?php print drupal_attributes($contact['#attributes'])?>>
 
-<div class="name-img clearfix">
-<?php
-  if (isset($contact['picture-url'])) {
-    print '<img src="'.$contact['picture-url'].'">';
-  }
-  else {
-    print '<a class="img-placeholder"></a>';
-  }
-?>
+<span class="name-img clearfix">
+  <?php
+    if (isset($contact['picture-url'])) {
+      print '<img src="'.$contact['picture-url'].'">';
+    }
+    else {
+      print '<span class="img-placeholder"></span>';
+    }
+  ?>
+  <sapn class="name"><?php print $contact['first-name']; print ' ';  print $contact['last-name']; ?></span>
+</span>
 
-<h3 class="name"><a href="<?php print $contact['public-profile-url'] ?>"><?php print $contact['first-name']; print ' ';  print $contact['last-name']; ?></a></h3>
-
-</div>
-
-<p class="relationship">You know <?php print $contact['first-name'] . $relation; ?></p>
+<span class="relationship">You know <?php print $contact['first-name'] . $relation; ?></span>
 
 <?php //var_dump($contact); ?>
 
-</div>
+</a>

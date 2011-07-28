@@ -1604,7 +1604,28 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 }
 
 /* LinkedIn #block-level_platform-people_known */
+#block-level_platform-people_known h2 {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  top: 1px;
+  padding: 10px;
+  background: #f7f7f7;
+  color: #333;
+  border: 1px solid #ccc;
+  border-bottom: 0 none;
+  z-index: 9;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
 #block-level_platform-people_known .content {
+  clear: both;
+  width: 678px;
   padding: 10px;
   margin-bottom: 20px;
   background: #f7f7f7;
@@ -1617,6 +1638,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   box-shadow: 5px 5px 10px #ddd;
   overflow: hidden;
   position: relative;
+  z-index: 8;
 }
 
 #block-level_platform-people_known ul.linkedin_contact_list,
@@ -1626,12 +1648,38 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   list-style: none;
 }
 
+#block-level_platform-people_known ul.linkedin_contact_list {
+
+}
+
 #block-level_platform-people_known ul.linkedin_contact_list li {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li a,
+#block-level_platform-people_known ul.linkedin_contact_list li a span {
+  display: block;
+}
+
+#block-level_platform-people_known ul.linkedin_contact_list li a {
   width: 185px;
   float: left;
-  margin: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+}
+#block-level_platform-people_known ul.linkedin_contact_list li a:hover {
+  background: #fff;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-box-shadow: 3px 3px 5px #ddd;
+  -webkit-box-shadow: 3px 3px 5px #ddd;
+  box-shadow: 3px 3px 5px #ddd;
 }
 
 #block-level_platform-people_known ul.linkedin_contact_list li img,
@@ -1644,16 +1692,21 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   margin-right: 10px;
 }
 
+#block-level_platform-people_known ul.linkedin_contact_list li .img-placeholder {
+  background: transparent url(../images/icon_linkedin_no_photo_40x40.gif) 50% 50% no-repeat;
+}
+
 #block-level_platform-people_known ul.linkedin_contact_list li .name {
   float: left;
   font-size: 13px;
   padding: 2px 0;
 }
 
-#block-level_platform-people_known ul.linkedin_contact_list li .name a {
+#block-level_platform-people_known ul.linkedin_contact_list li a .name {
   color: #333;
+  font-weight: bold;
 }
-#block-level_platform-people_known ul.linkedin_contact_list li .name a:hover {
+#block-level_platform-people_known ul.linkedin_contact_list li a:hover .name {
   color: #21A0E1;
 }
 
@@ -1661,7 +1714,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   clear: both;
   padding: 10px 0 5px 0;
   font-size: 12px;
-  line-height: 1.25em;
+  line-height: 1.4em;
   font-weight: normal;
   color: #333;
 }
@@ -1670,7 +1723,7 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   clear: both;
   padding: 10px 180px;
   font-size: 12px;
-  line-height: 1.25em;
+  line-height: 1.4em;
   font-weight: normal;
   color: #333;
   text-align: center;
@@ -1694,12 +1747,12 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 
 .jcarousel-prev {
   background: transparent url(../images/carousel-prev-next.png) 0 50% no-repeat;
-  left: 20px;
+  left: 10px;
 }
 
 .jcarousel-next {
   background: transparent url(../images/carousel-prev-next.png) 100% 50% no-repeat;
-  right: 20px;
+  right: 10px;
 }
 
 .jcarousel-prev-disabled,
