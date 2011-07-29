@@ -1950,11 +1950,8 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   color: #999;
 }
 
-#page_tools #block-level_search-level_search_tabs .item-list li a#level_search_block_tab_companies {
+#page_tools #block-level_search-level_search_tabs .item-list li.active_tab a {
   background: transparent url(../images/pin-down-7px.png) 67px 50% no-repeat;
-}
-#page_tools #block-level_search-level_search_tabs .item-list li a#level_search_block_tab_directors {
-  background: transparent url(../images/pin-up-7px.png) 67px 50% no-repeat;
 }
 
 #page_tools #block-level_search-level_search_tabs .item-list li a:hover {

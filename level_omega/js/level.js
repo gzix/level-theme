@@ -99,7 +99,9 @@ $(document).ready(function() {
      
      // Hide inactive tab & form
      $('.level_search_tabbed_form').not('.level_search_tabbed_form_active').hide();
+
      $(topSearchBox + ' .item-list ul li').not('.active_tab').hide();
+     $(topSearchBox + ' .item-list ul li').not('.active_tab').appendTo(topSearchBox + ' .item-list ul');
      
      // Expand both Companies & Directors tabs when rollover
      $(topSearchBox + ' .item-list ul').hover(
@@ -112,6 +114,7 @@ $(document).ready(function() {
             // add .active_tab class to it then remove that class from its sibling
             $(this).addClass('active_tab');
             $(this).siblings().removeClass('active_tab');
+            
             // if Directors tab is active, show its form & hide Companies form
             if ($(this).children().hasClass('search_block_tab_Directors')) {
               $(topSearchBox + ' #level_search_block_form_companies').hide();
@@ -126,7 +129,7 @@ $(document).ready(function() {
        },
        // mouseout
        function(){
-         $(this).children().not('.active_tab').hide();
+         $(this).children().not('.active_tab').appendTo(this).hide();
        }
      );
      
