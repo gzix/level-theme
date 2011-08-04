@@ -404,18 +404,42 @@ function level_omega_linkedin_auth_display_login_block_button($display = NULL, $
 /* Theme function for the Global Toolbar */
 function level_omega_global_toolbar($vars) {
   
-  $output = '<div id="profile-links">'.
+  $output = '<div id="global-links-left">'.
               $vars['links']['my_profile'].
               $vars['links']['my_account'].
             '</div>'.
-            
-            '<div id="access-links">'.
+
+            _level_omega_get_level_tagging_block().
+
+            '<div id="global-links-right">'.
               $vars['links']['login'].
               $vars['links']['register'].
               $vars['links']['logout'].
             '</div>';
 
   return $output;
+}
+
+function _level_omega_get_level_tagging_block() {
+  
+  $path = drupal_get_path_alias($_GET['q']);
+
+  // Company detail pages
+  if (arg(0) == 'doc' && arg(1) == 'company') {
+    // Call 'save_block'
+    $block = module_invoke('level_tagging', 'block', 'view', 'save_block');
+    $block['content'] = '<div id="global-links-middle">'.$block['content'].'</div>';
+    return $block['content'];
+  }
+  
+  // User's profile pages
+  if (arg(0) == 'user') {
+    // Call 'user_lists_summary_block'
+    $block = module_invoke('level_tagging', 'block', 'view', 'user_lists_summary_block');
+    $block['content'] = '<div id="global-links-middle">'.$block['content'].'</div>';
+    return $block['content'];
+  }
+  
 }
 
 /* Dynamic display page & user form elements */

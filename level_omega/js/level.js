@@ -139,5 +139,27 @@ $(document).ready(function() {
      }
      
    }
+   
+   // #page_tools My List
+   var myLists = 'body.section-user #page_tools #global-links-middle';
+
+   $(myLists).addClass('jsEnabled').wrapInner('<div id="wrapInner" />');
+
+   // Change text
+   $(myLists + ' h2').text('My Lists');
+
+   $(myLists).hover(
+     // mouseover
+     function(){
+       $(myLists + ' #wrapInner').addClass('jsHover clearfix');
+       $(myLists + ' .item-list').show();
+     },
+
+     // mouseout
+     function(){
+       $(myLists + ' #wrapInner').removeClass('jsHover clearfix');
+       $(myLists + ' .item-list').hide();
+     }
+   );
 
 });

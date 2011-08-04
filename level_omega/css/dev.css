@@ -1870,15 +1870,15 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
 }
 
 /* buttons */
-#profile-links {
+#global-links-left {
   float: left;
 }
-#access-links {
+#global-links-right {
   float: right;
 }
 
-#profile-links a,
-#access-links a {
+#global-links-left a,
+#global-links-right a {
   display: block;
   float: left;
   font-size: 11px;
@@ -1893,8 +1893,8 @@ body.section-doc #main-content form#node-form #edit-body-wrapper label {
   background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
 }
 
-#profile-links a:hover,
-#access-links a:hover {
+#global-links-left a:hover,
+#global-links-right a:hover {
   color: #555;
   background: transparent url(../images/button-grey-gradient.gif) 0 100% repeat-x;
 }
@@ -2049,4 +2049,156 @@ a#level_accounts_download_link {
 #block-boxes-tweet_block {
   float: right;
   margin-left: 10px;
+}
+
+
+/* #global-links-middle */
+#page_tools #global-links-middle {
+  float: left;
+}
+
+/* level_tagging superfish js menu */
+#level_tagging_save_box {
+	position: absolute;
+	z-index: 111;
+	width: 200px;
+}
+
+#level_tagging_save_box #sf_save_profile {
+  margin: 0;
+  padding: 0;
+}
+
+#level_tagging_save_box #sf_save_profile.sf-js-enabled {
+  width: 200px;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item.sfHover {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-top: 0px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 3px 3px 10px #999;
+  -webkit-box-shadow: 3px 3px 10px #999;
+  box-shadow: 3px 3px 10px #999;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item a.top_link {
+  margin: 0;
+  width: auto;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item.sfHover a.top_link {
+  border: 0 none;
+  background: transparent;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item ul#level_tagging_save_list {
+  clear: both;
+  padding-bottom: 5px;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item ul#level_tagging_save_list li {
+  display: block;
+  background: transparent;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item ul#level_tagging_save_list li a {
+  display: block;
+  width: auto;
+  padding: 3px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  background: transparent;
+  border-top: 1px solid #ccc;
+}
+#level_tagging_save_box ul#sf_save_profile li.top_item ul#level_tagging_save_list li a:hover {
+  color: #21A0E1;
+  background: transparent;
+}
+
+#level_tagging_save_box ul#sf_save_profile li.top_item a.top_link,
+#page_tools #global-links-middle h2 {
+  display: block;
+  float: left;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #999;
+  background: transparent url(../images/button-grey-gradient.gif) 0 0 repeat-x;
+}
+
+/* #global-links-middle */
+#page_tools #global-links-middle {
+  float: left;
+  border: 0 none;
+  padding: 0;
+  position: relative;
+}
+
+body.section-user #page_tools #global-links-middle.jsEnabled #wrapInner.jsHover {
+  width: 200px;
+  margin-right: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 3px 3px 10px #999;
+  -webkit-box-shadow: 3px 3px 10px #999;
+  box-shadow: 3px 3px 10px #999;
+}
+
+#page_tools #global-links-middle .item-list {
+  display: none;
+  clear: both;
+}
+
+#page_tools #global-links-middle.jsEnabled .item-list ul {
+  padding: 10px;
+  margin: 0;
+}
+
+#page_tools #global-links-middle.jsEnabled .item-list ul li {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  background: transparent;
+  border-top: 1px solid #ccc;
+  border-bottom: 0 none;
+  padding: 3px 0;
+  margin: 0;
+}
+
+#page_tools #global-links-middle.jsEnabled .item-list ul li .tag_summary_tag_name {
+  float: left;
+}
+
+#page_tools #global-links-middle.jsEnabled .item-list ul li .tag_summary_tag_total {
+  float: right;
+}
+
+#page_tools #global-links-middle h2 {
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+#page_tools #global-links-middle.jsEnabled #wrapInner.jsHover h2 {
+  background: transparent;
+  border: 0 none;
 }
