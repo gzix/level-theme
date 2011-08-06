@@ -422,7 +422,6 @@ function level_omega_global_toolbar($vars) {
 
 function _level_omega_get_level_tagging_block() {
   global $user;
-  $path = drupal_get_path_alias($_GET['q']);
 
   // Company detail pages
   if (arg(0) == 'doc' && arg(1) == 'company') {
