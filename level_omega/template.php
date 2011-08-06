@@ -421,7 +421,7 @@ function level_omega_global_toolbar($vars) {
 }
 
 function _level_omega_get_level_tagging_block() {
-  
+  global $user;
   $path = drupal_get_path_alias($_GET['q']);
 
   // Company detail pages
@@ -431,9 +431,9 @@ function _level_omega_get_level_tagging_block() {
     $block['content'] = '<div id="global-links-middle">'.$block['content'].'</div>';
     return $block['content'];
   }
-  
-  // User's profile pages
-  if (arg(0) == 'user') {
+
+  // Other pages only when user logged in
+  elseif ($user->uid) {
     // Call 'user_lists_summary_block'
     $block = module_invoke('level_tagging', 'block', 'view', 'user_lists_summary_block');
     $block['content'] = '<div id="global-links-middle">'.$block['content'].'</div>';
